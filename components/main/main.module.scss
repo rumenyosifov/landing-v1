@@ -1,0 +1,104 @@
+.main {
+  min-height: 100vh;
+  padding-top: 15vh;
+  overflow: hidden;
+  .mainContainer {
+    position: relative;
+    .text {
+      position: absolute;
+      top: 176px;
+      z-index: 5;
+      .title {
+        font-weight: 500;
+        font-size: 2.5em;
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+      .subtitle {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 1.3em;
+        width: 420px;
+      }
+    }
+    .imgWrapper {
+      position: absolute;
+      border-radius: 50%;
+      width: 660px;
+      height: 660px;
+      right: 134px;
+      top: 60px;
+      &:before {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        width: 660px;
+        height: 660px;
+        background: linear-gradient(143.14deg, #eea052 13.11%, rgba(200, 151, 119, 0) 90.59%),
+          #cab79d;
+      }
+      .key {
+        background-image: url('/images/key.png');
+        background-repeat: no-repeat;
+        height: 372px;
+        width: 568px;
+        z-index: 1;
+        position: absolute;
+        top: 82px;
+
+        right: -160px;
+      }
+      .lock {
+        background-image: url('/images/lock.png');
+        background-repeat: no-repeat;
+        height: 402px;
+        width: 597px;
+        z-index: 2;
+        position: absolute;
+        top: 240px;
+        right: 334px;
+      }
+      .lockBack {
+        background-image: url('/images/lockBack.png');
+        background-repeat: no-repeat;
+        height: 70px;
+        width: 40px;
+        position: absolute;
+        z-index: 0;
+        top: 305px;
+        right: 366px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    .mainContainer {
+      .imgWrapper {
+        right: 0;
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    .mainContainer {
+      .text {
+        top: 55px;
+        font-size: 1.1rem;
+        text-shadow: 0px 0px 4px #ffffff;
+        .subtitle {
+          width: auto;
+        }
+      }
+      .imgWrapper {
+        left: 50%;
+        margin-left: -300px;
+        transform: rotate(320deg) scale(0.7);
+      }
+    }
+  }
+}
