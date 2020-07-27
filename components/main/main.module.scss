@@ -2,22 +2,24 @@
   min-height: 100vh;
   padding-top: 15vh;
   overflow: hidden;
+  font-size: 0.9rem;
   .mainContainer {
     position: relative;
+    height: 85vh;
     .text {
       position: absolute;
       top: 176px;
       z-index: 5;
       .title {
         font-weight: 500;
-        font-size: 2.5em;
+        font-size: 2.5rem;
         margin-top: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5em;
       }
       .subtitle {
         display: inline-block;
         font-weight: 500;
-        font-size: 1.3em;
+        font-size: 1.3rem;
         width: 420px;
       }
     }
@@ -27,7 +29,7 @@
       width: 660px;
       height: 660px;
       right: 134px;
-      top: 60px;
+      bottom: 87px;
       &:before {
         content: '';
         position: absolute;
@@ -45,7 +47,6 @@
         z-index: 1;
         position: absolute;
         top: 82px;
-
         right: -160px;
       }
       .lock {
@@ -88,16 +89,17 @@
     .mainContainer {
       .text {
         top: 55px;
-        font-size: 1.1rem;
-        text-shadow: 0px 0px 4px #ffffff;
+        font-size: 0.8rem;
+        text-shadow: 0px 0px 2px #ffffff;
         .subtitle {
           width: auto;
         }
       }
       .imgWrapper {
         left: 50%;
-        margin-left: -300px;
-        transform: rotate(320deg) scale(0.7);
+        margin-left: -315px;
+        bottom: -60px;
+        transform: rotate(320deg) scale(0.5);
       }
     }
   }

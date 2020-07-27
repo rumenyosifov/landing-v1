@@ -4,12 +4,12 @@ import styles from './main.module.scss';
 
 const Main = () => {
   const { scrollYProgress } = useViewportScroll();
-  const keyX = useTransform(scrollYProgress, [0, 0.2], [-160, -43]);
-  const keyY = useTransform(scrollYProgress, [0, 0.2], [84, 80]);
-  const lockX = useTransform(scrollYProgress, [0, 0.2], [334, 227]);
-  const lockY = useTransform(scrollYProgress, [0, 0.2], [240, 176]);
-  const backLockX = useTransform(scrollYProgress, [0, 0.2], [366, 259]);
-  const backLockY = useTransform(scrollYProgress, [0, 0.2], [305, 241]);
+  const keyX = useTransform(scrollYProgress, [0, 0.2], [0, -74]);
+  const keyY = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
+  const lockX = useTransform(scrollYProgress, [0, 0.2], [0, 150]);
+  const lockY = useTransform(scrollYProgress, [0, 0.2], [0, -59]);
+  const backLockX = useTransform(scrollYProgress, [0, 0.2], [0, 149]);
+  const backLockY = useTransform(scrollYProgress, [0, 0.2], [0, -60]);
   return (
     <section className={styles.main}>
       <div className={`container ${styles.mainContainer}`}>
@@ -20,11 +20,20 @@ const Main = () => {
         <div className={styles.imgWrapper}>
           <div className={styles.circle} />
           <motion.div
-            style={{ right: keyX, top: keyY }}
+            x={keyX}
+            y={keyY}
             className={styles.key}
           />
-          <motion.div style={{ right: lockX, top: lockY }} className={styles.lock} />
-          <motion.div style={{ right: backLockX, top: backLockY }} className={styles.lockBack} />
+          <motion.div
+            x={lockX}
+            y={lockY}
+            className={styles.lock}
+          />
+          <motion.div
+            x={backLockX}
+            y={backLockY}
+            className={styles.lockBack}
+          />
         </div>
       </div>
     </section>
