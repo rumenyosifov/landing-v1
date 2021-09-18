@@ -50,10 +50,15 @@ const Header = () => {
         <nav className={styles.nav}>
           <ul>
             <li>
-              <a href="#services">Servicios</a>
+              <Link href="/#services"><a>Servicios</a></Link>
             </li>
             <li>
-              <a href="#about">Contactos</a>
+              <Link href="/#about"><a>Contactos</a></Link>
+            </li>
+            <li>
+              <Link href="/blog">
+                <a>Blog</a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -61,10 +66,19 @@ const Header = () => {
         <motion.nav className={styles.mobileNav} variants={sidebar}>
           <ul>
             <li>
-              <a href="#services" onClick={() => toggleOpen()}>Servicios</a>
+              <Link href="/#services">
+                <a onClick={toggleOpen} role="link" tabIndex={0} onKeyUp={toggleOpen}>Servicios</a>
+              </Link>
             </li>
             <li>
-              <a href="#about" onClick={() => toggleOpen()}>Contactos</a>
+              <Link href="/#about">
+                <a onClick={toggleOpen} role="link" tabIndex={0} onKeyUp={toggleOpen}>Contactos</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog">
+                <a onClick={toggleOpen} role="link" tabIndex={0} onKeyUp={toggleOpen}>Blog</a>
+              </Link>
             </li>
           </ul>
         </motion.nav>

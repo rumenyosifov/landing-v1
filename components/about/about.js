@@ -3,6 +3,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import styles from './about.module.scss';
 import Facebook from '../icons/facebook';
+import WhatsApp from '../icons/whatsapp';
 
 const About = () => {
   const controls = useAnimation();
@@ -54,6 +55,7 @@ const About = () => {
           >
             <motion.div className={styles.icons} variants={fadeInUp}>
               <Facebook />
+              <WhatsApp />
             </motion.div>
             <motion.p className={styles.info} variants={fadeInUp}>
               Cerrajeros que nos responsabilizamos por tu seguridad las 24 horas, conocemos bien
