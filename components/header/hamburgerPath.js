@@ -15,9 +15,9 @@ const HamburgerPath = ({ d, variants, transition }) => (
 );
 
 HamburgerPath.propTypes = {
-  d: PropTypes.string.isRequired,
+  // d: PropTypes.string.isRequired,
   variants: PropTypes.shape({}).isRequired,
-  transition: PropTypes.shape({}).isRequired,
+  // transition: PropTypes.shape({}).isRequired,
 };
 
 export default HamburgerPath;

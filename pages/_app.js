@@ -3,6 +3,11 @@ import '../styles.scss';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 import Layout from '../components/layout/layout';
+import Services from '../components/services/services';
+import WhereWeAre from '../components/whereWeAre/whereWeAre';
+import HowWeWork from '../components/howWeWork/howWeWork';
+// import About from '../components/about/about';
+import Footer from '../components/footer/footer';
 
 function MyApp({ Component, pageProps, router }) {
   return (
@@ -17,6 +22,11 @@ function MyApp({ Component, pageProps, router }) {
       </Head>
       <Layout>
         <Component {...pageProps} key={router.route} />
+        <Services />
+        <WhereWeAre />
+        <HowWeWork />
+        {/* <About /> */}
+        <Footer />
       </Layout>
     </>
   );

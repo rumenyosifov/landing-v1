@@ -50,34 +50,37 @@ const Header = () => {
         <nav className={styles.nav}>
           <ul>
             <li>
-              <Link href="/#services"><a>Servicios</a></Link>
+              <Link href="/#servicios"><a>Servicios</a></Link>
             </li>
             <li>
-              <Link href="/#about"><a>Contactos</a></Link>
+              <Link href="/#zonas"><a>Zonas</a></Link>
             </li>
             <li>
+              <Link href="/#contactos"><a>Contactos</a></Link>
+            </li>
+            {/* <li>
               <Link href="/blog">
                 <a>Blog</a>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <Hamburger toggle={() => toggleOpen()} />
         <motion.nav className={styles.mobileNav} variants={sidebar}>
           <ul>
             <li>
-              <Link href="/#services">
+              <Link href="/#servicios">
                 <a onClick={toggleOpen} role="link" tabIndex={0} onKeyUp={toggleOpen}>Servicios</a>
               </Link>
             </li>
             <li>
-              <Link href="/#about">
-                <a onClick={toggleOpen} role="link" tabIndex={0} onKeyUp={toggleOpen}>Contactos</a>
+              <Link href="/#zonas">
+                <a onClick={toggleOpen} role="link" tabIndex={0} onKeyUp={toggleOpen}>Zonas</a>
               </Link>
             </li>
             <li>
-              <Link href="/blog">
-                <a onClick={toggleOpen} role="link" tabIndex={0} onKeyUp={toggleOpen}>Blog</a>
+              <Link href="/#contactos">
+                <a onClick={toggleOpen} role="link" tabIndex={0} onKeyUp={toggleOpen}>Contactos</a>
               </Link>
             </li>
           </ul>

@@ -1,14 +1,15 @@
 .main {
-  min-height: 100vh;
+  // min-height: 100vh;
   padding-top: 15vh;
   overflow: hidden;
   font-size: 0.9rem;
   .mainContainer {
     position: relative;
-    height: 85vh;
+    // height: 57vh;
+    height: 660px;
     .text {
       position: absolute;
-      top: 176px;
+      top: 133px;
       z-index: 5;
       .title {
         font-weight: 500;
@@ -17,68 +18,102 @@
         margin-bottom: 0.5em;
       }
       .subtitle {
-        display: inline-block;
+        display: block;
         font-weight: 500;
         font-size: 1.3rem;
-        width: 420px;
+        // width: 420px;
+      }
+      .subtitleButton {
+        display: inline-flex;
+        font-weight: 500;
+        font-size: 1.3rem;
+        background-color: #ff6161;
+        color: white;
+        padding: 5px 10px;
+        margin-top: 4px;
+        border-radius: 5px;
+        .phoneIcon {
+          display: flex;
+          align-items: center;
+          margin-right: 4px;
+        }
       }
     }
-    .imgWrapper {
-      position: absolute;
-      border-radius: 50%;
-      width: 660px;
-      height: 660px;
-      right: 134px;
-      bottom: 87px;
-      &:before {
-        content: '';
+    .imgContainer {
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      .imgWrapper {
+        flex: 1;
         position: absolute;
         border-radius: 50%;
         width: 660px;
         height: 660px;
-        background: linear-gradient(143.14deg, #eea052 13.11%, rgba(200, 151, 119, 0) 90.59%),
-          #cab79d;
-      }
-      .key {
-        background-image: url('/images/key.png');
-        background-repeat: no-repeat;
-        height: 372px;
-        width: 568px;
-        z-index: 1;
-        position: absolute;
-        top: 82px;
-        right: -160px;
-      }
-      .lock {
-        background-image: url('/images/lock.png');
-        background-repeat: no-repeat;
-        height: 402px;
-        width: 597px;
-        z-index: 2;
-        position: absolute;
-        top: 240px;
-        right: 334px;
-      }
-      .lockBack {
-        background-image: url('/images/lockBack.png');
-        background-repeat: no-repeat;
-        height: 70px;
-        width: 40px;
-        position: absolute;
-        z-index: 0;
-        top: 305px;
-        right: 366px;
+        right: -35px;
+        // transform: scale(0.65);
+        // bottom: 87px;
+        &:before {
+          content: '';
+          position: absolute;
+          border-radius: 50%;
+          width: 660px;
+          height: 660px;
+          background: linear-gradient(143.14deg, #eea052 13.11%, rgba(200, 151, 119, 0) 90.59%),
+            #cab79d;
+        }
+        .key {
+          background-image: url('/images/key.png');
+          background-repeat: no-repeat;
+          height: 372px;
+          width: 568px;
+          z-index: 1;
+          position: absolute;
+          top: 82px;
+          right: -160px;
+        }
+        .lock {
+          background-image: url('/images/lock.png');
+          background-repeat: no-repeat;
+          height: 402px;
+          width: 597px;
+          z-index: 2;
+          position: absolute;
+          top: 240px;
+          right: 334px;
+        }
+        .lockBack {
+          background-image: url('/images/lockBack.png');
+          background-repeat: no-repeat;
+          height: 70px;
+          width: 40px;
+          position: absolute;
+          z-index: 0;
+          top: 305px;
+          right: 366px;
+        }
       }
     }
   }
 }
 
+@media (min-width: 992px) {
+  .main {
+    .mainContainer {
+      // height: auto;
+      .imgWrapper {
+        right: 0;
+        transform: scale(0.65);
+      }
+    }
+  }
+}
 @media (max-width: 992px) {
   .main {
     .mainContainer {
+      // height: auto;
       .imgWrapper {
         right: 0;
-        transform: scale(0.9);
+        transform: scale(0.6);
       }
     }
   }
@@ -87,6 +122,7 @@
 @media (max-width: 768px) {
   .main {
     .mainContainer {
+      height: 85vh;
       .text {
         top: 55px;
         font-size: 0.8rem;

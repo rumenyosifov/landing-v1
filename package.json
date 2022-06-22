@@ -10,9 +10,9 @@
     "framer-motion": "^1.11.1",
     "next": "latest",
     "prop-types": "15.7.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-intersection-observer": "^8.26.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-intersection-observer": "^8.32.1",
     "sass": "1.26.3"
   },
   "devDependencies": {
