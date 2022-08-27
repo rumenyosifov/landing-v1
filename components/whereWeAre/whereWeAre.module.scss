@@ -106,8 +106,11 @@
         flex-direction: column;
         .text {
           font-size: 1.1rem;
+          align-items: center;
+          min-width: auto;
+          margin-bottom: 45px;
           ul {
-            height: 490px;
+            // height: 490px;
             li {
               height: 20px;
               a {
@@ -138,19 +141,20 @@
       .content {
         flex-direction: column;
         .text {
-          margin: 0;
-          min-width: auto;
+          // margin: 0;
           .service {
             margin: 0.5em 0;
           }
-          // ul {
-          //   li {
-          //     a {
-          //       font-size: 0.6rem;
-          //     }
+          .lists {
+            ul {
+              li {
+                a {
+                  font-size: 1.1rem;
+                }
 
-          //   }
-          // }
+              }
+            }
+          }
         }
       }
     }
