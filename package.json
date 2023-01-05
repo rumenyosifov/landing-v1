@@ -8,11 +8,11 @@
   },
   "dependencies": {
     "framer-motion": "^1.11.1",
-    "next": "latest",
+    "next": "^13.1.1",
     "prop-types": "15.7.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-intersection-observer": "^8.26.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-intersection-observer": "^8.34.0",
     "sass": "1.26.3"
   },
   "devDependencies": {
