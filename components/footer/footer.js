@@ -11,20 +11,22 @@ const Footer = () => (
     <div className={`container ${styles.footerContainer}`}>
       <div className={styles.upFooter}>
         <div className={styles.logoDiv}>
-          <Link href="/">
-            <a className={styles.logo}>
-              <Logo />
-              <div className={styles.logoText}>El Umbral Cerrojeria</div>
-            </a>
+          <Link href="/" className={styles.logo}>
+            <Logo />
+            <div className={styles.logoText}>El Umbral Cerrojeria</div>
           </Link>
         </div>
         <div className={styles.contacts}>
           <div className={styles.contactPhone}>
-            <span className={styles.phoneIcon}><Phone /></span>
+            <span className={styles.phoneIcon}>
+              <Phone />
+            </span>
             602 553 857
           </div>
           <div className={styles.contactWA}>
-            <span className={styles.waIcon}><WhatsApp /></span>
+            <span className={styles.waIcon}>
+              <WhatsApp />
+            </span>
             602 553 857
           </div>
         </div>
@@ -33,281 +35,287 @@ const Footer = () => (
         <div className={styles.links}>
           <h5>Menu</h5>
           <ul>
-            <li><Link href="/"><a>Servicios</a></Link></li>
-            <li><Link href="/"><a>Zonas</a></Link></li>
-            <li><Link href="/"><a>Contactos</a></Link></li>
+            <li>
+              <Link href="/">Servicios</Link>
+            </li>
+            <li>
+              <Link href="/">Zonas</Link>
+            </li>
+            <li>
+              <Link href="/">Contactos</Link>
+            </li>
           </ul>
         </div>
         <div className={styles.links}>
           <h5>Links</h5>
           <ul>
-            <li><Link href="/"><a>Aviso Legal</a></Link></li>
-            <li><Link href="/"><a>Política de Privacidad</a></Link></li>
-            <li><Link href="/"><a>Política de Cookies</a></Link></li>
-            <li><Link href="/"><a>sitemap</a></Link></li>
+            <li>
+              <Link href="/">Aviso Legal</Link>
+            </li>
+            <li>
+              <Link href="/">Política de Privacidad</Link>
+            </li>
+            <li>
+              <Link href="/">Política de Cookies</Link>
+            </li>
+            <li>
+              <Link href="/">sitemap</Link>
+            </li>
           </ul>
         </div>
         <div className={styles.links2}>
           <h5>Zonas</h5>
           <ul>
             <li>
-              <Link href="/cerrajeros-esplugues">
-                <a>Cerrajeros Esplugues</a>
-              </Link>
+              <Link href="/cerrajeros-esplugues">Cerrajeros Esplugues</Link>
             </li>
             <li>
-              <Link href="/cerrajeros-hospitalet">
-                <a>Cerrajeros Hospitalet</a>
-              </Link>
+              <Link href="/cerrajeros-hospitalet">Cerrajeros Hospitalet</Link>
             </li>
             <li>
-              <Link href="/cerrajeros-sants">
-                <a>Cerrajeros Sants</a>
-              </Link>
+              <Link href="/cerrajeros-sants">Cerrajeros Sants</Link>
             </li>
             <li>
-              <Link href="/cerrajeros-les-corts">
-                <a>Cerrajeros Les Corts</a>
-              </Link>
+              <Link href="/cerrajeros-les-corts">Cerrajeros Les Corts</Link>
             </li>
             {/* <li>
               <Link href="/cerrajeros-terrassa">
-                <a>Cerrajeros Terrassa</a>
+                Cerrajeros Terrassa
               </Link>
             </li>
             <li>
               <Link href="/cerrajeros-santa-coloma-de-gramenet">
-                <a>Cerrajeros Santa coloma de gramenet</a>
+                Cerrajeros Santa coloma de gramenet
               </Link>
             </li>
             <li>
               <Link href="/cerrajeros-sant-cugat">
-                <a>Cerrajeros Sant cugat</a>
+                Cerrajeros Sant cugat
               </Link>
             </li>
             <li>
               <Link href="/cerrajeros-sant boi">
-                <a>Cerrajeros Sant Boi</a>
+                Cerrajeros Sant Boi
               </Link>
             </li>
             <li>
               <Link href="/cerrajeros-cerdanyola">
-                <a>Cerrajeros Cerdanyola</a>
+                Cerrajeros Cerdanyola
               </Link>
             </li>
             <li>
               <Link href="/cerrajeros-badalona">
-                <a>Cerrajeros Badalona</a>
+                Cerrajeros Badalona
               </Link>
             </li>
             <li>
               <Link href="/cerrajeros-esplugues">
-                <a>Cerrajeros Esplugues</a>
+                Cerrajeros Esplugues
               </Link>
             </li>
             <li>
               <Link href="/cerrajeros-cornellá">
-                <a>Cerrajeros Cornellá</a>
+                Cerrajeros Cornellá
               </Link>
             </li>
             <li>
               <Link href="/cerrajeros-viladecans">
-                <a>Cerrajeros Viladecans</a>
+                Cerrajeros Viladecans
               </Link>
             </li> */}
             {/* <li>
                 <Link href="/cerrajeros-sitges">
-                  <a>Cerrajeros Sitges</a>
+                  Cerrajeros Sitges
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-sant-just-desvern">
-                  <a>Cerrajeros Sant Just Desvern</a>
+                  Cerrajeros Sant Just Desvern
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-sabadell">
-                  <a>Cerrajeros Sabadell</a>
+                  Cerrajeros Sabadell
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-ripollet">
-                  <a>Cerrajeros Ripollet</a>
+                  Cerrajeros Ripollet
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-premia-de-mar">
-                  <a>Cerrajeros Premia de Mar</a>
+                  Cerrajeros Premia de Mar
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-premia-de-dalt">
-                  <a>Cerrajeros Premia de Dalt</a>
+                  Cerrajeros Premia de Dalt
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-montgat">
-                  <a>Cerrajeros montgat</a>
+                  Cerrajeros montgat
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-mollet">
-                  <a>Cerrajeros Mollet</a>
+                  Cerrajeros Mollet
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-mataro">
-                  <a>Cerrajeros Mataro</a>
+                  Cerrajeros Mataro
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-manresa">
-                  <a>Cerrajeros Manresa</a>
+                  Cerrajeros Manresa
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-hospitalet">
-                  <a>Cerrajeros Hospitalet</a>
+                  Cerrajeros Hospitalet
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-granollers">
-                  <a>Cerrajeros Granollers</a>
+                  Cerrajeros Granollers
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-gava">
-                  <a>Cerrajeros Gava</a>
+                  Cerrajeros Gava
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-castelldefels">
-                  <a>Cerrajeros Castelldefels</a>
+                  Cerrajeros Castelldefels
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-barbera-del-valles">
-                  <a>Cerrajeros Barbera del Valles</a>
+                  Cerrajeros Barbera del Valles
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-sarria">
-                  <a>Cerrajeros Sarria</a>
+                  Cerrajeros Sarria
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-sants">
-                  <a>Cerrajeros Sants</a>
+                  Cerrajeros Sants
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-sant-gervasi">
-                  <a>Cerrajeros Sant Gervasi</a>
+                  Cerrajeros Sant Gervasi
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-sant-antoni">
-                  <a>Cerrajeros Sant Antoni</a>
+                  Cerrajeros Sant Antoni
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-poblenou">
-                  <a>Cerrajeros Poblenou</a>
+                  Cerrajeros Poblenou
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-poble-sec">
-                  <a>Cerrajeros Poble Sec</a>
+                  Cerrajeros Poble Sec
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-pedralbes">
-                  <a>Cerrajeros Pedralbes</a>
+                  Cerrajeros Pedralbes
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-nou-barris">
-                  <a>Cerrajeros Nou barris</a>
+                  Cerrajeros Nou barris
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-les-corts">
-                  <a>Cerrajeros Les Corts</a>
+                  Cerrajeros Les Corts
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-hostafrancs">
-                  <a>Cerrajeros Hostafrancs</a>
+                  Cerrajeros Hostafrancs
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-barri-del-clot">
-                  <a>Cerrajeros Barri del Clot</a>
+                  Cerrajeros Barri del Clot
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-barceloneta">
-                  <a>Cerrajeros Barceloneta</a>
+                  Cerrajeros Barceloneta
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-Hhorta">
-                  <a>Cerrajeros Horta</a>
+                  Cerrajeros Horta
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-gracia">
-                  <a>Cerrajeros Gracia</a>
+                  Cerrajeros Gracia
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-el-raval">
-                  <a>Cerrajeros El Raval</a>
+                  Cerrajeros El Raval
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-barrio-del-guinardo">
-                  <a>Cerrajeros Barrio del Guinardo</a>
+                  Cerrajeros Barrio del Guinardo
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-el-carmelo">
-                  <a>Cerrajeros El Carmelo</a>
+                  Cerrajeros El Carmelo
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-eixample">
-                  <a>Cerrajeros Eixample</a>
+                  Cerrajeros Eixample
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-barri-del-born">
-                  <a>Cerrajeros Barri del Born</a>
+                  Cerrajeros Barri del Born
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-zona-franca">
-                  <a>Cerrajeros Zona Franca</a>
+                  Cerrajeros Zona Franca
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-sant-vicenc-del-horts">
-                  <a>Cerrajeros Sant Vicenc del Horts</a>
+                  Cerrajeros Sant Vicenc del Horts
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-sant-andreu-de-la-barca">
-                  <a>Cerrajeros Sant Andreu De la Barca</a>
+                  Cerrajeros Sant Andreu De la Barca
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-sagrada-familia">
-                  <a>Cerrajeros Sagrada Familia</a>
+                  Cerrajeros Sagrada Familia
                 </Link>
               </li>
               <li>
                 <Link href="/cerrajeros-caldes-de-montbui">
-                  <a>Cerrajeros Caldes de Montbui</a>
+                  Cerrajeros Caldes de Montbui
                 </Link>
               </li> */}
           </ul>

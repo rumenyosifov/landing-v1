@@ -1,8 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import {
-  motion, useViewportScroll, useTransform, useCycle,
-} from 'framer-motion';
+import { motion, useViewportScroll, useTransform, useCycle } from 'framer-motion';
 import Logo from '../icons/logo';
 import styles from './header.module.scss';
 import Hamburger from './hamburger';
@@ -41,26 +39,24 @@ const Header = () => {
       animate={isOpen ? 'open' : 'closed'}
     >
       <div className={`container ${styles.headerContainer}`}>
-        <Link href="/">
-          <a className={styles.logo}>
-            <Logo />
-            <div className={styles.logoText}>El Umbral Cerrojeria</div>
-          </a>
+        <Link href="/" className={styles.logo}>
+          <Logo />
+          <div className={styles.logoText}>El Umbral Cerrojeria</div>
         </Link>
         <nav className={styles.nav}>
           <ul>
             <li>
-              <Link href="/#servicios"><a>Servicios</a></Link>
+              <Link href="/#servicios">Servicios</Link>
             </li>
             <li>
-              <Link href="/#zonas"><a>Zonas</a></Link>
+              <Link href="/#zonas">Zonas</Link>
             </li>
             <li>
-              <Link href="/#contactos"><a>Contactos</a></Link>
+              <Link href="/#contactos">Contactos</Link>
             </li>
             {/* <li>
               <Link href="/blog">
-                <a>Blog</a>
+                Blog
               </Link>
             </li> */}
           </ul>
@@ -69,18 +65,36 @@ const Header = () => {
         <motion.nav className={styles.mobileNav} variants={sidebar}>
           <ul>
             <li>
-              <Link href="/#servicios">
-                <a onClick={toggleOpen} role="link" tabIndex={0} onKeyUp={toggleOpen}>Servicios</a>
+              <Link
+                href="/#servicios"
+                onClick={toggleOpen}
+                role="link"
+                tabIndex={0}
+                onKeyUp={toggleOpen}
+              >
+                Servicios
               </Link>
             </li>
             <li>
-              <Link href="/#zonas">
-                <a onClick={toggleOpen} role="link" tabIndex={0} onKeyUp={toggleOpen}>Zonas</a>
+              <Link
+                href="/#zonas"
+                onClick={toggleOpen}
+                role="link"
+                tabIndex={0}
+                onKeyUp={toggleOpen}
+              >
+                Zonas
               </Link>
             </li>
             <li>
-              <Link href="/#contactos">
-                <a onClick={toggleOpen} role="link" tabIndex={0} onKeyUp={toggleOpen}>Contactos</a>
+              <Link
+                href="/#contactos"
+                onClick={toggleOpen}
+                role="link"
+                tabIndex={0}
+                onKeyUp={toggleOpen}
+              >
+                Contactos
               </Link>
             </li>
           </ul>

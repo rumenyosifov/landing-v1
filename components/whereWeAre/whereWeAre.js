@@ -38,27 +38,19 @@ const WhereWeAre = () => {
             <div className={styles.lists}>
               <ul>
                 <li>
-                  <Link href="/cerrajeros-esplugues">
-                    <a>Cerrajeros Esplugues</a>
-                  </Link>
+                  <Link href="/cerrajeros-esplugues">Cerrajeros Esplugues</Link>
                 </li>
 
                 <li>
-                  <Link href="/cerrajeros-hospitalet">
-                    <a>Cerrajeros Hospitalet</a>
-                  </Link>
+                  <Link href="/cerrajeros-hospitalet">Cerrajeros Hospitalet</Link>
                 </li>
 
                 <li>
-                  <Link href="/cerrajeros-sants">
-                    <a>Cerrajeros Sants</a>
-                  </Link>
+                  <Link href="/cerrajeros-sants">Cerrajeros Sants</Link>
                 </li>
 
                 <li>
-                  <Link href="/cerrajeros-les-corts">
-                    <a>Cerrajeros Les Corts</a>
-                  </Link>
+                  <Link href="/cerrajeros-les-corts">Cerrajeros Les Corts</Link>
                 </li>
               </ul>
             </div>
